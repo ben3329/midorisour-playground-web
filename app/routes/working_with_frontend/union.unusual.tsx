@@ -7,7 +7,7 @@ import ErrorBanner from "./components/ErrorBanner";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Unusual Response" },
+    { title: "Unusual Response(React)" },
     { name: "description", content: "Call Unusual API and display response" },
   ];
 }
@@ -29,7 +29,7 @@ export default function UnusualResponsePage() {
     <main className="min-h-screen py-10">
       <div className="container mx-auto px-4 max-w-5xl space-y-6">
         <header className="space-y-2">
-          <h1 className="text-2xl font-semibold tracking-tight">Unusual Response</h1>
+          <h1 className="text-2xl font-semibold tracking-tight">Unusual Response(React)</h1>
           <p className="text-sm text-gray-600 dark:text-gray-400">
             Unusual API를 호출해 응답을 확인해보세요. 오류 발생 시 초기화할 수 있어요.
           </p>
@@ -41,7 +41,7 @@ export default function UnusualResponsePage() {
 
         <section className="grid grid-cols-1 gap-4">
           <ApiCard
-            title="Unusual Response"
+            title="Unusual Response(React)"
             loading={!!loading.unusual}
             onCall={onUnusual}
             onReset={() => {
